@@ -1,2 +1,0 @@
-# webdentist
-Created with CodeSandbox
