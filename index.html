@@ -4,9 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
     <title>Static Template</title>
   </head>
-  <body>
-    sallut <strong>horace</strong>
+  <body class=".body-text-style">
+    <!-- Card Q -->
+
+    <section class="all-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="col-sm">
+              <div class="card-info">
+                <div class="card_info_image">
+                  <div class="card_info_title">
+                    SOINS & HYGIENE
+                  </div>
+                </div>
+                <div class="card_info_description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Soluta minus praesentium aut facilis eum iure eveniet quis,
+                    dignissimos, delectus, laudantium quam libero officiis
+                    voluptates labore nostrum velit cum nulla omnis!Loremtrdt
+                    yrfychygvhgfvhgv hjgvhgv
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card-info">
+              <div class="card_info_image">
+                <div class="card_info_title pull-bottom">
+                  SOINS & HYGIENE
+                </div>
+              </div>
+              <div class="card_info_description">
+                <h3 class="card-info-bold-title">
+                  Pourquoi faire un détartrage régulièrement
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta minus praesentium aut facilis eum iure eveniet quis,
+                  dignissimos, delectus, laudantium quam libero officiis
+                  voluptates labore nostrum velit cum nulla omnis!Loremtrdt
+                  yrfychygvhgfvhgv hjgvhgv
+                </p>
+                <a href="" class="color-primary">LIRE LA FICHE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card-info">
+              <div class="card_info_image">
+                <div class="card_info_title pull-bottom">
+                  SOINS & HYGIENE
+                </div>
+              </div>
+              <div class="card_info_description">
+                <h3 class="card-info-bold-title">
+                  Pourquoi faire un détartrage régulièrement
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta minus praesentium aut facilis eum iure eveniet quis,
+                  dignissimos, delectus, laudantium quam libero officiis
+                  voluptates labore nostrum velit cum nulla omnis!Loremtrdt
+                  yrfychygvhgfvhgv hjgvhgv
+                </p>
+                <a href="" class="color-primary">LIRE LA FICHE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- finQad -->
+
+    <button class="bt-primary bt-text-style">PRENDRE RENDEZ-VOUS</button>
+    <button class="bt-white bt-text-style">PRENDRE RENDEZ-VOUS</button>
+
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card-user">
+              <div id="layer1"></div>
+              <div id="layer2" class="bg-secondary-dark ">
+                <div class="card-user-content">
+                  <h3>
+                    <strong class="color-primary">Dr Franck MAYER</strong>
+                  </h3>
+                  <h5 class="color-primary">Dentiste</h5>
+                  <p class="color-white">
+                    Le docteur Meyer est le fondateur du cabinet dentaire. Il
+                    s’est démarqué notamment pour ses recherches en Parodontie
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(".card-user #layer2").each(function() {
+      var top = "" + parseInt(0.2 * parseInt($(this).css("width"))) + "px";
+      console.log(top);
+      $(this).css("top", top);
+    });
+
+    $(".card-user #layer1").each(function() {
+      var height = $(this).css("width");
+      console.log(top);
+      $(this).css("height", height);
+    });
+  </script>
 </html>

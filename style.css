@@ -1,0 +1,162 @@
+.bg-secondary {
+  background: #302a2d;
+}
+.bg-secondary-dark {
+  background: #201c1d;
+}
+.bg-primary {
+  background: #b09a51;
+}
+
+.color-secondary {
+  color: #302a2d;
+}
+.color-secondary-dark {
+  color: #201c1d;
+}
+.color-primary {
+  color: #b09a51;
+}
+.color-white {
+  color: #ffffff;
+}
+
+.bt-primary {
+  padding: 15px;
+  background: #b09a51;
+  color: white;
+  border: 0;
+  border: 2px solid #b09a51;
+}
+.bt-white {
+  padding: 15px;
+  background: white;
+  color: #201c1d;
+  border: 2px solid #dddddd;
+}
+
+.bt-text-style {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.body-text-style {
+  font-family: Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.01em;
+
+  color: #7e7e7e;
+}
+
+.card-info {
+  width: 314px;
+}
+.card_info_image {
+  width: 314px;
+  height: 252px;
+  background-image: url("assets/images/article-img-1\ 7.png");
+  position: relative;
+  /* margin-bottom: 170px; */
+}
+
+.card_info_title {
+  position: absolute;
+  top: calc(75%);
+  left: -25px;
+  padding: 7px;
+  background: #201c1d;
+  font-size: 15px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  color: #b09a51;
+}
+.card-info-bold-title {
+  margin-top: 25px;
+  font-weight: bold;
+  color: black;
+}
+.card_info_description {
+  position: relative;
+  /* top: calc(105%); */
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  color: rgba(48, 42, 45, 0.6);
+}
+
+.pull-bottom {
+  top: 93%;
+  margin-bottom: 25px;
+}
+
+.pull-left {
+}
+
+.all-card {
+  padding: 70px;
+}
+
+.flex-container-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft_menu {
+  display: flex;
+}
+
+/*Card user*/
+.card-user {
+  background: none;
+  position: relative;
+  z-index: 1;
+  height: 400px;
+  width: 400px;
+}
+.card-user-content {
+  margin-top: 25%;
+  padding: 5%;
+}
+.card-user-content * {
+  text-align: center;
+}
+.card-user-content img {
+  border-radius: 50%;
+}
+.card-user-content .color-white {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-user #layer1 {
+  position: absolute;
+  z-index: 2;
+  background: url("assets/images/article-img-1\ 7.png");
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+  top: 0;
+  left: 30%;
+}
+.card-user #layer2 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+}
+/* end card user */
+
+.form-border {
+  border: 1px solid #dddddd;
+}
